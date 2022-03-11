@@ -14,6 +14,6 @@ for res in users :
     if res['Name'] == search :
        print(res['Age'])
        break
-    else :
-       print("There is no user with given name !")
+else :
+    print("There is no user with given name !")
        
