@@ -9,11 +9,13 @@ for x in range(0,int(count)) :
     users.append(user_data)
 
 search = input("Please Enter a name to search :")  
-
+found=False
 for res in users :
     if res['Name'] == search :
+       found=True
        print(res['Age'])
        break
-else :
-       print("There is no user with given name !")
+          
+if found==False:
+     print("There is no user with given name !")
        
